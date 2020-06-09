@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cabecalho{
+	text-align: center;
+	padding-top: 40px;
+}
+
+.cabecalho h1{
+	font-weight: 200;
+	font-size: 1.8rem;
+	color: hsl(234, 12%, 34%);
+}
+
+.cabecalho h2{
+	font-weight: 600;
+	font-size: 1.8rem;
+	color: hsl(234, 12%, 34%);
+	margin-bottom: 1.3rem
+}
+
+.cabecalho p{
+	margin: 0 auto;
+	font-weight: 400;
+	font-size: 0.8rem;
+	width: 500px;
+	color: hsl(229, 6%, 66%);
+}
+
+.cards{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.card{
+	padding: 25px;
+	border-radius: 4px;
+	box-shadow: 0 8px 14px 2px rgba(0, 0, 0, 0.2);
+	max-width: 350px;
+	height: 170px;
+	margin: 2rem;
+
+
+
+	margin-bottom: 30px; /*Remover*/
+}
+
+.oi{
+	display: flex;
+	flex-direction: column;
+}
+
+.cards__supervisor{ border-top: 4px solid hsl(180, 62%, 55%); }
+.cards__teambuilder{ border-top: 4px solid hsl(0, 78%, 62%); }
+.cards__karma{ border-top: 4px solid hsl(34, 97%, 64%); }
+.cards__calculator{ border-top: 4px solid hsl(212, 86%, 64%); }
+
+.cards h1{
+	color: hsl(234, 12%, 34%);
+}
+
+.cards p{
+	color: hsl(229, 6%, 66%);
+	font-size: 0.8rem;
+	padding-top: 10px; 
+}
+
+.cards img{
+	padding-top: 25px; 
+	float: right;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width:375px) {
+	*{
+		font-size: 15px;
+	}
+	.cabecalho p{
+		width: 70%;
+	}
+	.cards{
+		flex-direction: column;
+	}
+}
